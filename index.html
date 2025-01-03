@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>お問い合わせフォーム</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <form method="POST" action="/api/submit">
+      <label for="name">Nome:</label>
+      <input id="name" name="name" type="text" required>
+ 
+      <label for="email">Email:</label>
+      <input id="email" name="email" type="email" required>
+ 
+      <label for="subject">Assunto:</label>
+      <input id="subject" name="subject" type="text" required>
+ 
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message" required></textarea>
+ 
+      <button type="submit">送信</button>
+    </form>
+  </body>
+</html>
